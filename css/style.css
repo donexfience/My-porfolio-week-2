@@ -171,24 +171,8 @@ h2 {
         background-position: 2000px 0;
     }
 }
-.data-text2{
-    position: relative;
-    font-size: 1.3rem;
-    color: transparent;
-    line-height: 2.75rem;
-    margin-bottom: 0.15rem;
-    font-family: var(--primary-font);
-    -webkit-text-stroke: 0.10px black;
-    background: url(../back.png);
-    -webkit-background-clip: text;
-    background-position: 0 0;
-    animation:back 40s linear infinite
-}
-@keyframes back{
-    100%{
-        background-position: 4000px 0;
-    }
-}
+
+
 /* animation for the text end */
 h4 {
     font-weight: 700;
@@ -323,7 +307,7 @@ p {
 .banner_wrapper {
     padding-top: 6.875rem;
     z-index: 1;
-    background-image: url('../vecteezy_human-work-office-illustration-creative-design_11006584\ \(1\).jpg');
+    background-image: url('../compressed/8-min.jpg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -613,8 +597,10 @@ input[type=submit] {
 
 /* footer */
 .footer_wrapper .footer-logo img {
-    max-width: 8.5rem;
+    max-width: 4.5rem;
     height: auto;
+    margin-top: 1px;
+    border-radius: 160px; 
 }
 
 .footer_wrapper .social-icon li {
