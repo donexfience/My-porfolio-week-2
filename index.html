@@ -429,17 +429,17 @@
                         <h3 style="color: blueviolet;">Get update from Me</h3>
                         <p style="color: black;">You can contact me through this form and ask any doubts</p>
 
-                        <form id="gform" action="https://script.google.com/macros/s/AKfycbw35t3rtK4gIuHwmHIR7xKgrsCrag_ogxi-517STUhFCDXxa4qKh5ohebCUTgon7kow_Q/exec" method="post" class="row g-2 justify-content-center" >
+                        <form id="gform" action="https://script.google.com/macros/s/AKfycbw35t3rtK4gIuHwmHIR7xKgrsCrag_ogxi-517STUhFCDXxa4qKh5ohebCUTgon7kow_Q/exec" method="post" class="row g-2 justify-content-center" onsubmit="return validateForm();">
                             <div class="col col-sm-6 col-lg-4">
                                 <div class="input-group">
-                                <label for="fname">First Name: </label>
-                                <input type="text" autocomplete="off" id="contact-name" name="name" placeholder="Your name.." onkeyup="validateName()">
-                                <span id="name-error"></span>
+                                    <label for="fname">First Name: </label>
+                                    <input type="text" autocomplete="off" id="contact-name" name="name" placeholder="Your name.." onkeyup="validateName()">
+                                    <span id="name-error"></span>
                                 </div>
                                 <div class="input-group">
-                                <label for="lname">Email :</label>
-                                <input type="text" id="contact-email" autocomplete="off" name="email" placeholder="Your email adress.."onkeyup="validateEmail()">
-                                <span id="Email-error"></span>
+                                    <label for="lname">Email :</label>
+                                    <input type="text" id="contact-email" autocomplete="off" name="email" placeholder="Your email address.." onkeyup="validateEmail()">
+                                    <span id="Email-error"></span>
                                 </div> 
                                 <div class="input-group">
                                     <label for="contact-phone">Phone No :</label>
@@ -448,17 +448,16 @@
                                 </div>
                                 <div class="input-group">
                                     <textarea id="contact-message" autocomplete="off" name="message" placeholder="Write something.." style="height:170px" onkeyup="validateMessage()"></textarea>
-                                    <span id="meassage-error"></span>
+                                    <span id="message-error"></span>
                                 </div>
                                 <div class="input-group">
-                                    <label for="subject">Adress: </label>
-                                    <textarea id="adress" autocomplete="off" name="contact-adress" placeholder="Write your adress.." style="height:100px"></textarea>
+                                    <label for="subject">Address: </label>
+                                    <textarea id="contact-adress" autocomplete="off" name="contact-adress" placeholder="Write your address.." style="height:100px"></textarea>
                                     <span id="adress-error"></span>
                                 </div>
-                                <input type="submit"  id="submit" value="Submit" onsubmit="validateForm();">
+                                <input type="submit" id="submit" value="Submit">
                             </div>
-                            </div>
-                        </form>
+                        </form>                        
                     </div>
                 </div>
             </div>
